@@ -34,12 +34,6 @@ export default function Movie() {
     console.log("API response received:", response.data);
     setMovies(response.data.Search);
   };
-  const handleSortChange = (event) => {
-    setSortedBy(event.target.value);
-  };
-  const handleGenreChange = (event) => {
-    setSelectedGenre(event.target.value);
-  };
   return (
     <div className="container">
       <h1>Movie Night</h1>

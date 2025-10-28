@@ -36,7 +36,7 @@ export default function Movie() {
   };
   return (
     <div className="container">
-      <h1>Movie Night</h1>
+      <h1>MovieNight</h1>
       <div className="input-search">
         <input
           type="text"

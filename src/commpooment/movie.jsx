@@ -55,24 +55,6 @@ export default function Movie() {
           <CiSearch />
         </button>
       </div>
-      <div className="sort">
-        <select
-          id="sort-select"
-          className="sort-select"
-          value={sortedBy}
-          onChange={handleSortChange}
-        >
-          <option value="popularity.desc">Popularity descending</option>
-          <option value="popularity.asc">Popularity ascending</option>
-          <option value="release_date.desc">Release Date descending</option>
-          <option value="release_date.asc">Release Date ascending</option>
-          <option value="vote_average.desc">Rating descending</option>
-          <option value="vote_average.asc">Rating ascending</option>
-        </select>
-        <label className="sort-label" htmlFor="sort-select">
-          Sort by:
-        </label>
-      </div>
       <div className="movie_wrapper">
         {movies?.map((movie) => (
           <div key={movie.imdbID} className="movie_card">

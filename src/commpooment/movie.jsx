@@ -73,7 +73,7 @@ export default function Movie() {
           Sort by:
         </label>
       </div>
-      <div className="movie_wareper">
+      <div className="movie_wrapper">
         {movies?.map((movie) => (
           <div key={movie.imdbID} className="movie_card">
             <img
